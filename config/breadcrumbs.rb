@@ -3,7 +3,7 @@ crumb :root do
 end
 
 crumb :tweet do
-  link "詳細", tweet_path
+  link "詳細", tweet_path(current_user)
 end
 
 # crumb :projects do
