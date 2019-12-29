@@ -2,6 +2,10 @@ crumb :root do
   link "Home", root_path
 end
 
+crumb :tweet do
+  link "詳細", tweet_path
+end
+
 # crumb :projects do
 #   link "Projects", projects_path
 # end
