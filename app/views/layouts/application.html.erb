@@ -25,12 +25,12 @@
       <div class="header__bar row">
         <h1 class="grid-6"><a href="/">PicTweet</a></h1>
         <div>
-  <% breadcrumb :tweet %>
-  <div class="bread">
-    <div class="bread__name">
-      <%= breadcrumbs %>
-    </div>
-  </div>
+        <% breadcrumb :tweet %>
+          <div class="bread">
+            <div class="bread__name">
+              <%= breadcrumbs %>
+            </div>
+          </div>
         <% if user_signed_in? %>
           <div class="user_nav grid-6">
             <span><%= current_user.nickname %>
