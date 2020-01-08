@@ -1,4 +1,4 @@
-json.arry! @tweets do |tweet|
+json.array! @tweets do |tweet|
   json.id tweet.id
   json.text tweet.text
   json.image tweet.image
