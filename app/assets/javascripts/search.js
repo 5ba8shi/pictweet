@@ -4,20 +4,37 @@ $(function(){
 
   function appendTweet(tweet) {
     let current_user = tweet.user_sign_in && tweet.user_sign_in.id == tweet.user_id ?
-
-    let current_user = tweet.user_sign_in && tweet.user_sign_in.id == tweet.user_id ?
-
-    <% if user_signed_in? && current_user.id == tweet.user_id %>
-    <li>
-      <%= link_to '編集', "/tweets/#{tweet.id}/edit", method: :get %>
-    </li>
-    <li>
-      <%= link_to '削除', "/tweets/#{tweet.id}", method: :delete %>
-    </li>
-
-
+                            `<li>
+                              <a data-method="get" href="/tweets/${tweet.id}">詳細</a>
+                            </li>   
+                            <li>
+                              <a data-method="get" href="/tweets/${tweet.id}/edit">編集</a>
+                            </li>` : "";
+              
+    let html =`<div class="content_post" style="background-image: url(${tweet.image});">
+                <div class="more">
+                  <span><img src="/assets/arrow_top.png"></span>
+                  <ul class="more_list">
+                      <li>
+                        <a data-method="get" href="/tweets/${tweet.id}">詳細</a>
+                      </li>
+                      ${current_user}
+                  </ul>
+                </div>
+                <p>${tweet.text}</p><br>
+                <span class="name">
+                  <a href="/users/${tweet.user_id}">
+                    <span>投稿者</span>${tweet.nickname}
+                  </a>
+                </span>
+              </div>`
+    search_list.append(html);
   }
 
+  fuction appendErrMsgToHTML(msg) {
+    let html =`<div class='name'>${ msg }</div>`
+    search_list.append(html):
+  }
 
   $(".search-input").on("keyup", function() {
     let input = $(".search-input").val();
