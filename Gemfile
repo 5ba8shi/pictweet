@@ -70,3 +70,5 @@ gem 'omniauth-rails_csrf_protection'
 gem 'omniauth-facebook'
 gem 'dotenv-rails'
 gem 'omniauth-google-oauth2'
+# Use jquery as the JavaScript library
+gem 'jquery-rails'
