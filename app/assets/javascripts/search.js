@@ -31,9 +31,9 @@ $(function(){
     search_list.append(html);
   }
 
-  fuction appendErrMsgToHTML(msg) {
+  function appendErrMsgToHTML(msg) {
     let html =`<div class='name'>${ msg }</div>`
-    search_list.append(html):
+    search_list.append(html);
   }
 
   $(".search-input").on("keyup", function() {
@@ -55,5 +55,8 @@ $(function(){
         appendErrMsgToHTML("一致するツイートがありません。");
       }
     })
+    .fail(function() {
+      alert('error');
+    });
   });
 });
