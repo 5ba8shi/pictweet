@@ -72,3 +72,6 @@ gem 'dotenv-rails'
 gem 'omniauth-google-oauth2'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+group :production do
+  gem 'unicorn', '5.4.1'
+end
