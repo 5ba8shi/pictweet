@@ -235,6 +235,9 @@ div.contents.row {
     background-position: center center;
     border-radius: 3px;
     box-shadow: 0 0 10px rgba($black,0.2);
+    display: grid;
+    gap: 26px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     &:after {
       content: '';
       position: absolute;
@@ -405,9 +408,26 @@ footer {
   }
   .grid-6 {
   text-align: center;
-}
-body {
-  padding-top: 120px;
-}
+  }
+  body {
+    padding-top: 120px;
+  }
+
+  .search-form {
+    padding-top: 32px;
+    .search-input {
+      margin-right: 10px;
+      width: 60%;
+    }  
+    .search-btn {
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      width: 30%;     
+    }
+  }
+  
+
+
 
 }
