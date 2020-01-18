@@ -99,10 +99,13 @@ a {
     border-color: lighten($accent, 15%);
     color: lighten($accent, 15%);
   }
+  &:active {
+    border-color: lighten($accent, 15%);
+    color: lighten($accent, 15%);
+  }
+  
 }
 
-h1,h2,h3,h4,h5,h6 {
-}
 
 .title {
   font-weight: bold;
