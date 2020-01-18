@@ -39,7 +39,7 @@ $white: white;
 
 body,html {
   height: 100%;
-  background-image: url('/assets/images/main-image.jpg');
+  background-image: image-url("main-image.jpg");
 }
 
 body {
