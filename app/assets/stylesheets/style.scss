@@ -420,8 +420,9 @@ form{
 }
 
 footer {
-  @include boxBase;
+  @include boxBase(90px auto 0, 10px);
   color: $gray;
+  background-color: brown;
   p {
     text-align: center;
   }
