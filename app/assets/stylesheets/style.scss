@@ -203,6 +203,9 @@ header.header {
      }
   }
 }
+
+
+
 .form {
   background: url(https://dl.dropboxusercontent.com/u/5840617/DeathtoStock_Wired3.jpg);
   background-size: cover;
@@ -220,6 +223,9 @@ header.header {
     right: 0;
   }
 }
+
+
+
 div.contents.row {
   h2 {
     @include boxBase(20px 0, 0);
@@ -444,5 +450,13 @@ footer {
 
   }
 
+  div.contents.row {
+    div.content_post {
+      height: 300px;
+      max-width: 430px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
 
 }
