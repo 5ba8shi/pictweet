@@ -83,11 +83,16 @@ a {
   background: $gray;
 }
 
+
+// transition-propertyプロパティは、transition（時間的変化）効果を適用するCSSプロパティ名を指定する際に使用。
 .transition {
   @include transition-property(all);
   @include transition-duration(0.2s);
   @include transition-timing-function(linear);
 }
+// transition-propertyプロパティ-------------------
+
+
 
 .btn {
     @include basePadding(8px 20px);
@@ -127,7 +132,7 @@ a {
 header.header {
   @include basePadding;
   border-bottom: 1px solid $gray;
-  background-color: #fff;
+  background-color: $white;
   position: fixed;
   top: 0;
   left: 0;
@@ -198,6 +203,9 @@ header.header {
      }
   }
 }
+
+
+
 .form {
   background: url(https://dl.dropboxusercontent.com/u/5840617/DeathtoStock_Wired3.jpg);
   background-size: cover;
@@ -215,6 +223,9 @@ header.header {
     right: 0;
   }
 }
+
+
+
 div.contents.row {
   h2 {
     @include boxBase(20px 0, 0);
@@ -237,9 +248,6 @@ div.contents.row {
     background-position: center center;
     border-radius: 3px;
     box-shadow: 0 0 10px rgba($black,0.2);
-    display: grid;
-    gap: 26px;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     &:after {
       content: '';
       position: absolute;
@@ -441,9 +449,15 @@ footer {
     text-align: center;
 
   }
-
-
-
-
+  
+  // 投稿画像サイズ変更
+  div.contents.row {
+    div.content_post {
+      height: 300px;
+      max-width: 430px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
 
 }
