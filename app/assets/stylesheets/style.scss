@@ -83,11 +83,16 @@ a {
   background: $gray;
 }
 
+
+// transition-propertyプロパティは、transition（時間的変化）効果を適用するCSSプロパティ名を指定する際に使用。
 .transition {
   @include transition-property(all);
   @include transition-duration(0.2s);
   @include transition-timing-function(linear);
 }
+// transition-propertyプロパティ-------------------
+
+
 
 .btn {
     @include basePadding(8px 20px);
@@ -237,9 +242,6 @@ div.contents.row {
     background-position: center center;
     border-radius: 3px;
     box-shadow: 0 0 10px rgba($black,0.2);
-    display: grid;
-    gap: 26px;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     &:after {
       content: '';
       position: absolute;
@@ -441,9 +443,6 @@ footer {
     text-align: center;
 
   }
-
-
-
 
 
 }
