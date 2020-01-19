@@ -1,20 +1,20 @@
 <div class="contents row">
   <div class="container">
-    <h2>Sign up</h2>
+    <h2>サインアップ</h2>
     <%= form_with model: @user, url: user_registration_path, id: 'new_user', class: 'new_user', local: true do |f| %>
       <%= devise_error_messages! %>
 
       <div class="field">
-        <%= f.label :nickname %> <em>(6 characters maximum)</em><br />
+        <%= f.label :ニックネーム %> <em>(最大6文字まで)</em><br />
         <%= f.text_field :nickname, autofocus: true, maxlength: "6" %>
       </div>
       <div class="field">
-        <%= f.label :email %><br />
+        <%= f.label :メールアドレス %><br />
         <%= f.email_field :email %>
       </div>
 
       <div class="field">
-        <%= f.label :password %>
+        <%= f.label :パスワード %>
         <% if @validatable %>
           <em>(<%= @minimum_password_length %> characters minimum)</em>
         <% end %><br />
@@ -22,13 +22,13 @@
       </div>
 
       <div class="field">
-        <%= f.label :password_confirmation %><br />
+        <%= f.label :パスワードの確認 %><br />
         <%= f.password_field :password_confirmation, autocomplete: "off" %>
       </div>
 
       <div class="actions">
         <%= f.submit "サインアップする" %>
-        <div class="login"><%= link_to "ログインする", new_user_session_path %></div>
+        <%= link_to "ログインする", new_user_session_path, class: "login" %>
       </div>
     <% end %>
     <ul class= "sns_register">
