@@ -345,7 +345,8 @@ div.contents.row {
     }
   }
 }
-form {
+
+form{
   h3 {
     @include baseMargin(0 0 20px);
     text-align: center;
@@ -353,8 +354,8 @@ form {
     font-size: 20px;
     color: $dark;
   }
-  input,textarea,
-  .login {
+  input,
+  textarea{
     width: 100%;
     @include boxBase(5px 0 15px,10px);
     border: 1px solid $gray;
@@ -372,12 +373,35 @@ form {
       background-color: lighten($accent, 10%);
     }
   }
-  .login {
-    @extend input[type="submit"];
-    color: #fff;
-    text-align: center;
+}
+
+// ログインボタン Facebook Google------------------------- 
+.login{
+  @include baseMargin(0 0 20px);
+  text-align: center;
+  font-weight: normal;
+  font-size: 20px;
+  color: $dark;
+
+  width: 100%;
+  @include boxBase(5px 0 15px,10px);
+  border: 1px solid $gray;
+  border-radius: 5px;
+  font-family: "游ゴシック", "YuGothic";
+
+  @extend .transition;
+  background-color: $accent;
+  border-radius: 20px;
+  color: #fff;
+  border: 0;
+  font-size: 18px;
+  &:hover{
+        background-color: lighten($accent, 10%);
   }
 }
+
+// -------------------------ログインボタン Facebook Google
+
 .container {
   @include boxBase(20px 0 ,30px);
   box-shadow: 0 0 10px rgba($black,0.2);
