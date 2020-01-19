@@ -24,7 +24,7 @@
   <body>
     <header class="header">
       <div class="header__bar row">
-        <h1 class="grid-6"><a href="/">Mina De Tweet!!</a></h1>
+        <h1 class="grid-6"><a href="/", id="sidebar-btn">Mina De Tweet!!</a></h1>
         <% if user_signed_in? %>
           <div class="user_nav grid-6">
             <span><%= current_user.nickname %>
@@ -35,12 +35,12 @@
                 </li>
               </ul>
             </span>
-            <%= link_to "つぶやく", new_tweet_path, class: "post" %>
+            <%= link_to "つぶやく", new_tweet_path, class: "post", id: "sidebar-btn" %>
           </div>
         <% else %>
           <div class="grid-6">
-            <%= link_to "ログイン", new_user_session_path, class: 'post' %>
-            <%= link_to "新規登録", new_user_registration_path, class: 'post' %>
+            <%= link_to "ログイン", new_user_session_path, class: "post", id: "sidebar-btn" %>
+            <%= link_to "新規登録", new_user_registration_path, class: 'post', id: "sidebar-btn"%>
           </div>
         <% end %>
       </div>

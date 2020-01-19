@@ -59,7 +59,7 @@ h1,h2,h3,h4,h5,h6,body {
 }
 
 // ログイン、ログアウト、ホームへ戻るなどのボタン設定-----------------
-.sidebar-btn {
+#sidebar-btn {
   text-decoration: none;
   color: $dark;
   @extend .transition;
