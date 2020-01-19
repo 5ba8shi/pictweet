@@ -132,6 +132,7 @@ a {
 header.header {
   @include basePadding;
   border-bottom: 1px solid $gray;
+  background-color: $white;
   position: fixed;
   top: 0;
   left: 0;
