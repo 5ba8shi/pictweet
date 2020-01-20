@@ -96,6 +96,13 @@ h1,h2,h3,h4,h5,h6,body {
 // transition-propertyプロパティ-------------------
 
 
+// ホーム画面のトップページの画像
+.image-home{
+  background-color: chartreuse;
+  height: 600px;
+  width: 100%;
+}
+
 
 .btn {
     @include basePadding(8px 20px);
