@@ -1,9 +1,26 @@
-
-    <header class="header">
-      <div class="home-content2">
-        <h1 class="page-title2"><a href="/", id="sidebar-btn">Mina De Tweet!!</a></h1>
+<% if user_signed_in? %>
+  <header class="header">
+    <div class="header__bar row">
+      <h1 class="grid-6"><a href="/", id="sidebar-btn">Mina De Tweet!!</a></h1>
+      <div class="user_nav grid-6">
+        <span><%= current_user.nickname %>
+          <ul class="user__info">
+            <li>
+              <%= link_to "マイページ", "/users/#{current_user.id}" %>
+              <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+            </li>
+          </ul>
+        </span>
+        <%= link_to "つぶやく", new_tweet_path, class: "post", id: "sidebar-btn" %>
       </div>
-    </header>
+    </div>
+  </header>
+<% else %>
+<header class="header">
+  <div class="home-content2">
+    <h1 class="page-title2"><a href="/", id="sidebar-btn">Mina De Tweet!!</a></h1>
+  </div>
+</header>
 <div class="home-content wrapper big-bg" id="image-home">
   <h2 class="page-title">We're Happy By Tweet!!</h2>
   <p>気軽にシーンをシェアしません?楽しさを共有。</p>
@@ -12,6 +29,7 @@
     <%= link_to "新規登録", new_user_registration_path, class: 'post', id: "sidebar-btn"%>
   </div>
 </div>
+<% end %>
 
 <%= form_with(url: search_tweets_path, local: true, method: :get, class: "search-form") do |form| %>
   <%= form.text_field :keyword, placeholder: "投稿を検索‼", class: "search-input" %>
