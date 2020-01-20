@@ -45,9 +45,11 @@ body,html {
   background-image: image-url("main-image.jpg");
 }
 
+// ヘッダーの余白を生成
 body {
   padding-top: 60px;
 }
+
 
 h1,h2,h3,h4,h5,h6,body {
   line-height: 1.57;
@@ -97,13 +99,24 @@ h1,h2,h3,h4,h5,h6,body {
 
 
 // ホーム画面のトップページの画像
-.image-home{
+#image-home{
   background-color: chartreuse;
   height: 600px;
   width: 100%;
   margin-bottom: 70px;
+  margin-top: 0;
 }
-
+.page-title {
+  transform: none;
+}
+.home-content {
+  text-align: center;
+  margin-top: 10%;
+}
+.home-content p {
+  font-size: 1.125rem;
+  margin: 10px 0 42px;
+}
 
 .btn {
     @include basePadding(8px 20px);
