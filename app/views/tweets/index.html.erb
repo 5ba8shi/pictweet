@@ -1,4 +1,4 @@
-  <body>
+
     <header class="header">
       <div class="home-content2">
         <h1 class="page-title2"><a href="/", id="sidebar-btn">Mina De Tweet!!</a></h1>
@@ -7,7 +7,12 @@
 <div class="home-content wrapper big-bg" id="image-home">
   <h2 class="page-title">We're Happy By Tweet!!</h2>
   <p>気軽にシーンをシェアしません?楽しさを共有。</p>
+  <div class="grid-6">
+    <%= link_to "ログイン", new_user_session_path, class: "post", id: "sidebar-btn" %>
+    <%= link_to "新規登録", new_user_registration_path, class: 'post', id: "sidebar-btn"%>
+  </div>
 </div>
+
 <%= form_with(url: search_tweets_path, local: true, method: :get, class: "search-form") do |form| %>
   <%= form.text_field :keyword, placeholder: "投稿を検索‼", class: "search-input" %>
   <%= form.submit "検索", class: "search-btn" %>
