@@ -95,15 +95,36 @@ h1,h2,h3,h4,h5,h6,body {
   @include transition-duration(0.2s);
   @include transition-timing-function(linear);
 }
-// transition-propertyプロパティ-------------------
+//------------------- transition-propertyプロパティ
 
 
-// ホーム画面のトップページの画像-------------
+// ホーム画面のトップページ ヘッダー  -------------------------
+
+.page-title2 {
+  color: white;
+  transform: none;
+  font-size:2rem;
+  font-family: 'Philosopher', serif;
+  font-weight: normal;
+}
+.home-content2 {
+  color: white;
+  text-align: center;
+}
+
+//  ------------------------- ホーム画面のトップページ ヘッダー
+
+
+
+// ホーム画面のトップページの画像-------------------------
+#home-page{
+  text-align: center;
+}
 #image-home{
   background-image: image-url("Aurora.jpg");
   height: 600px;
   width: 100%;
-  margin-bottom: 70px;
+  margin-bottom: 30px;
   margin-top: 0;
 }
 .big-bg {
@@ -129,7 +150,6 @@ h1,h2,h3,h4,h5,h6,body {
 }
 
 // -------------ホーム画面のトップページの画像
-
 
 .btn {
     @include basePadding(8px 20px);
