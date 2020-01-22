@@ -3,11 +3,11 @@
   <div class="container">
     <%= form_with(model: @tweet, local: true) do |form| %>
       <h3>
-        つぶやく
+        投稿する
       </h3>
-      <%= form.text_field :image, placeholder: "Image Url" %>
-      <%= form.text_area :text, placeholder: "text" , rows: "10" %>
-      <%= form.submit "SEND" %>
+      <%= form.text_field :image, placeholder: "画像のURLを入力して下さい。" %>
+      <%= form.text_area :text, placeholder: "本文" , rows: "10" %>
+      <%= form.submit "投稿" %>
     <% end %>
   </div>
 </div>
