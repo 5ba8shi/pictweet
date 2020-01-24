@@ -492,8 +492,7 @@ form{
 
 footer {
   @include boxBase(90px auto 0, 10px);
-  color: $gray;
-  background-color: brown;
+  color: $black;
   p {
     text-align: center;
   }
