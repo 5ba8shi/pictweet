@@ -72,6 +72,22 @@ h1,h2,h3,h4,h5,h6,body {
 // ----------------ログイン、ログアウト、ホームへ戻るなどのボタン設定
 
 
+// ホームのログイン、新規登録-----------------
+#login-btn {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #f7f7f7;
+  border-left: solid 6px #ff7c5c;/*左線*/
+  color: #ff7c5c;/*文字色*/
+  font-weight: bold;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  &:active {
+    box-shadow: inset 0 0 2px rgba(128, 128, 128, 0.1);
+    transform: translateY(2px);
+  }
+}
+// -----------------ホームのログイン、新規登録
 .bold {
   font-weight: bold;
 }
@@ -257,7 +273,7 @@ header.header {
           border-bottom: 1px solid #d8d8d8;
         }
       }
-     }
+    }
   }
 }
 
