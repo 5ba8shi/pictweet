@@ -367,10 +367,10 @@ div.contents.row {
       height: 100px;
       width: 80px;
       text-align: right;
-      &:hover ul.more_list { // 下矢印の詳細が発火する
+      &:hover ul.more_list { // 下矢印の詳細のJSが発火する
         display: block;
       }
-      ul.more_list {
+      ul.more_list { // 下矢印の各段のCSS設定
         position: absolute;
         text-align: left;
         width: 80px;
