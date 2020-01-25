@@ -29,10 +29,9 @@
 
       <div class="actions">
         <%= f.submit "サインアップする" %>
-        <%= link_to "ログインする", new_user_session_path, class: "login" %>
       </div>
     <% end %>
-    <ul>
+    <ul class = "sns">
       <li><%= link_to "Facebookでログイン", user_facebook_omniauth_authorize_path, method: :post, class: "sns_register" %></li><br>
       <li><%= link_to "Googleでログイン", user_google_oauth2_omniauth_authorize_path, method: :post, class: "sns_register" %></li>
     </ul>
