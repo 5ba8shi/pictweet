@@ -346,7 +346,7 @@ div.contents.row {
     background-position: center center;
     border-radius: 3px;
     box-shadow: 0 0 10px rgba($black,0.2);
-    &:after {
+    &:after { // 投稿画像の下部の影のCSS
       content: '';
       position: absolute;
       top: 0;
@@ -358,7 +358,7 @@ div.contents.row {
       z-index: 1;
       border-radius: 3px;
     }
-    .more {
+    .more { // 投稿画像上部の下矢印の詳細、編集、削除
       position: absolute;
       cursor: pointer;
       top: 20px;
