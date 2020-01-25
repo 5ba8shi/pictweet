@@ -203,6 +203,7 @@ h1,h2,h3,h4,h5,h6,body {
 }
 
 
+// ホームを除くヘッダー関係----------------------------------
 header.header {
   @include basePadding;
   border-bottom: 1px solid $gray;
@@ -277,6 +278,29 @@ header.header {
     }
   }
 }
+
+.dropdwn_menu{
+  width: 100%;
+  display: none;
+  position: absolute;
+  margin-left: -5px;
+  margin-top: 5px;
+  padding: 0;
+  background: #fafafa;
+}
+
+.dropdwn_menu li{
+  width: 100%;
+}
+
+.dropdwn_menu li a{
+  padding: 5px 0;
+  margin: -5px 5px -5px -5px;
+  display: block;
+  color: black;
+}
+
+// ----------------------------------ホームを除くヘッダー関係
 
 
 
@@ -484,9 +508,6 @@ form{
     }
   }
 }
-
-
-
 // -------------------------ログインボタン Facebook Google
 
 .container {
