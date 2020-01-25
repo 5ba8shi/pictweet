@@ -325,7 +325,7 @@ header.header {
 
 
 div.contents.row {
-  h2 {
+  h2 {// 投稿画像の名前のCSS
     @include boxBase(20px 0, 0);
     font-weight: normal;
     strong {
@@ -337,7 +337,7 @@ div.contents.row {
   .new_user{
   font-family: "游ゴシック", "YuGothic";
   }
-  div.content_post {
+  div.content_post { // 投稿画像の大きさなどのCSS
     @include boxBase(20px 0 ,30px);
     position: relative;
     height: 400px;
@@ -397,7 +397,7 @@ div.contents.row {
         }
       }
     }
-    p {
+    p { // 投稿画像の名前
       @extend .serif;
       position: absolute;
       left: 30px;
@@ -409,7 +409,7 @@ div.contents.row {
       font-weight: bold;
       text-shadow: 0 0 2px #000, 0 0 1px #000, 0 0 1px #000;
     }
-    span.name {
+    span.name { // 投稿画像の下部の投稿者名
       position: absolute;
       right: 30px;
       bottom: 30px;
