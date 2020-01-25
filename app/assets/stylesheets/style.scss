@@ -367,7 +367,7 @@ div.contents.row {
       height: 100px;
       width: 80px;
       text-align: right;
-      &:hover ul.more_list {
+      &:hover ul.more_list { // 下矢印の詳細が発火する
         display: block;
       }
       ul.more_list {
