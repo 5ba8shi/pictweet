@@ -381,15 +381,15 @@ div.contents.row {
         display: none;
         box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
         border-radius: 3px;
-        li {
+        li { // 下矢印の各段の区分けボーダーライン
           border-bottom: 1px solid #ddd;
-          &:last-child {
+          &:last-child { // 下矢印の最下部のボーダーラインをなしにする。
             border-bottom: 0;
           }
-          a {
+          a { // 下矢印の各段をクリックしやすいようにする要素
             display: block;
             padding: 5px;
-            &:hover {
+            &:hover { // 下矢印の各段の上にカーソルを乗せた時に色が変化
               background-color: $accent;
               color: #fff;
             }
