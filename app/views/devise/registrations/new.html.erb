@@ -31,6 +31,7 @@
         <%= f.submit "サインアップする" %>
       </div>
     <% end %>
+    
     <ul class = "sns">
       <li><%= link_to "Facebookでサインアップ", user_facebook_omniauth_authorize_path, method: :post, class: "sns_register_f" %></li>
       <li><%= link_to "Googleでサインアップ", user_google_oauth2_omniauth_authorize_path, method: :post, class: "sns_register_g" %></li>
