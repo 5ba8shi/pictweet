@@ -32,9 +32,9 @@
         <%= link_to "ログインする", new_user_session_path, class: "login" %>
       </div>
     <% end %>
-    <ul class= "sns_register">
-      <li class= "sns_register"><%= link_to "Facebookでログイン", user_facebook_omniauth_authorize_path, method: :post %></li><br>
-      <li class= "sns_register"><%= link_to "Googleでログイン", user_google_oauth2_omniauth_authorize_path, method: :post %></li>
+    <ul>
+      <li><%= link_to "Facebookでログイン", user_facebook_omniauth_authorize_path, method: :post, class: "sns_register" %></li><br>
+      <li><%= link_to "Googleでログイン", user_google_oauth2_omniauth_authorize_path, method: :post, class: "sns_register" %></li>
     </ul>
   </div>
 </div>
